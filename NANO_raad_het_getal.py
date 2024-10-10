@@ -18,6 +18,5 @@ def raad_het_getal():
             break
         elif gok != nummer and pogingen == 0:
             print(f'Het is je helaas niet gelukt om het getal te raden, het goede antwoord was {nummer}.')
-            print(afsluiting)
         else:
             print('Helaas was dat niet het goede antwoord.')
