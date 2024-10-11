@@ -24,7 +24,7 @@ def galgje():
             print('Deze letter is al geraden!')
         elif poging not in woord:
             if len(poging) > 1:
-                print(f'''{poging} is niet het goede antwoord
+                print(f'''{poging} is niet het goede antwoord.
 {plaatje_print(aantal_fouten)}''')
                 aantal_fouten += 1
             else:
@@ -46,7 +46,7 @@ def galgje():
                 if letter == poging:
                     verstopt_woord[index] = poging
             if '_' not in verstopt_woord:
-                print(f'\nJe hebt de laatste letter geraden!, gefeliciteerd! Het woord was dus {woord}.!')
+                print(f'\nJe hebt de laatste letter geraden!, gefeliciteerd! Het woord was dus {woord}.')
                 return 1
 
     while True:
