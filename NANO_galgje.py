@@ -9,7 +9,6 @@ def galgje():
     print(f'Ik heb een woord van {len(woord)} letters uitgekozen voor galgje.')
 
     verstopt_woord = ['_' for _ in woord]
-    afsluiting = 'Tot de volgende keer!'
 
     aantal_fouten = 0
     verkeerde_letters = []
@@ -31,11 +30,10 @@ def galgje():
                 verkeerde_letters.append(poging)
                 print(f'''{poging} zit helaas niet in het woord.
 {plaatje_print(aantal_fouten)}
-        Al geraden letters: {' '.join(verkeerde_letters)}''')
+        Verkeerde letters: {' '.join(verkeerde_letters)}''')
                 aantal_fouten += 1
             if aantal_fouten == 7:
-                print(f'''\nHet is je helaas niet gelukt om het woord te raden, het goede antwoord was {woord}.
-{afsluiting}''')
+                print(f'\nHet is je helaas niet gelukt om het woord te raden, het goede antwoord was {woord}.')
                 return 1
         elif poging == woord:
             print(f'\nJe hebt het goede woord geraden, gefeliciteerd!')
