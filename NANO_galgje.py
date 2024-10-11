@@ -18,7 +18,9 @@ def galgje():
         nonlocal aantal_fouten
         print(f'\n{"".join(verstopt_woord)}')
         poging = input('Geef een letter of het hele woord als je het antwoord al weet: ').lower()
-        if poging in geraden_letters:
+        if poging.isdigit():
+            print('Sorry, ik accepteer geen getal als poging.')
+        elif poging in geraden_letters:
             print('Deze letter is al geraden!')
         elif poging not in woord:
             if len(poging) > 1:
