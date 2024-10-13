@@ -1,3 +1,7 @@
+#NANO app store
+#Bram de Bondt
+#V1D
+
 galgje_plaatje = ['''
               +---+
               |   |
